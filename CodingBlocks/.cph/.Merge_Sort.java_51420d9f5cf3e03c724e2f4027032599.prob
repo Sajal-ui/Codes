@@ -1,0 +1,1 @@
+{"name":"Local: Merge_Sort","url":"f:\\CodingBlocks\\Merge_Sort.java","tests":[{"id":1649511628910,"input":"5\n4 5 3 1 2","output":"1 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CodingBlocks\\Merge_Sort.java","group":"local","local":true}
