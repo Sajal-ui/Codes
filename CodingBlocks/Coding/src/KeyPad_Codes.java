@@ -25,5 +25,6 @@ public class KeyPad_Codes {
 	 createCode(str,Codes,0,str.length(),sb);
 	 System.out.println();
 	 System.out.println(count);
+	 sc.close();
   }
 }

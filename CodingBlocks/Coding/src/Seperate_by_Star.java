@@ -15,5 +15,6 @@ public class Seperate_by_Star {
 		res+=String.valueOf(ch);
 	}
 	System.out.println(res);
+	sc.close();
   }
 }

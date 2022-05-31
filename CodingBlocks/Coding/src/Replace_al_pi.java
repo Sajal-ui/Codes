@@ -22,6 +22,7 @@ public class Replace_al_pi {
 		   ans=arr[0]+"3.14"+Answer_Split(arr[1],pattern);
 		 }
 		 System.out.println(ans);
+		 sc.close();
 	  }
    }
 }

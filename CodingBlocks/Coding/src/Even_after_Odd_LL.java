@@ -54,5 +54,6 @@ public class Even_after_Odd_LL {
 		 System.out.print(head.value+" ");
 		 head=head.next;
 	 }
+	 sc.close();
    }
 }   

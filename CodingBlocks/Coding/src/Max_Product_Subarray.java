@@ -32,5 +32,6 @@ public class Max_Product_Subarray {
             }
         }
         System.out.println(max);
+        sc.close();
     }
 }

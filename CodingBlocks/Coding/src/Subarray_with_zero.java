@@ -23,5 +23,6 @@ public class Subarray_with_zero {
             }
             hash.add(sum);
         }
+        sc.close();
     }
 }

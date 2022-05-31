@@ -48,5 +48,6 @@ public class Palindrome_linkedlist {
 		}
 	}
 	System.out.println(isPalin(head));
+	sc.close();
   }
 }

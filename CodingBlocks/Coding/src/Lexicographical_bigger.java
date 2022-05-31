@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Lexicographical_bigger {
@@ -51,5 +50,6 @@ public class Lexicographical_bigger {
 	  else {
 		  System.out.println(str);
 	  }
+	  sc.close();
    }
 }

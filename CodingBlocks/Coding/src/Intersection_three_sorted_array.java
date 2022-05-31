@@ -20,7 +20,7 @@ public class Intersection_three_sorted_array {
             C[i]=sc.nextInt();
         }
         int i=0,j=0,k=0;
-        int count=0;
+        //int count=0;
         ArrayList<Integer> list=new ArrayList<>();
         while(i<n1 && j<n2 && k<n3){
             if(A[i]==B[j]){
@@ -56,5 +56,6 @@ public class Intersection_three_sorted_array {
             }
         }
         System.out.println(list);
+        sc.close();
     }
 }

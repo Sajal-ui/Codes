@@ -35,5 +35,6 @@ public class Circular_Tour {
 		 distance[i]=sc.nextInt();
 	 }
 	 System.out.println(Index(petrol,distance));
+	 sc.close();
   }
 }

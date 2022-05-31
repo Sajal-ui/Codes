@@ -37,5 +37,6 @@ public class Quick_Sort {
 	for(int i=0;i<n;i++) {
 		System.out.print(A[i]+" ");
 	}
+	sc.close();
   }
 }

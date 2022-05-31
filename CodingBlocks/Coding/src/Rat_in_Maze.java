@@ -50,5 +50,6 @@ public class Rat_in_Maze {
 	 }
 	 System.out.println();
 	 System.out.println(list.size());
+	 sc.close();
   }
 }

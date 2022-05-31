@@ -51,5 +51,6 @@ public class Count_Inversions{
 	    arr[i]=sc.nextInt();		
 	  }
 	  System.out.println(count_Inver(arr,0,n-1));
+	  sc.close();
 	}
 }

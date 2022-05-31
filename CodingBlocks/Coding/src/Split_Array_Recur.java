@@ -43,5 +43,6 @@ public class Split_Array_Recur {
 	  split_up(A,n,s1,s2,set1,set2,0);
 	  System.out.println(count);
 	}
+	sc.close();
   }
 }

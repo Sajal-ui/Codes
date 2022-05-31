@@ -20,5 +20,6 @@ public class Class_Assingment {
 		   int k=sc.nextInt();
 		   System.out.println("#"+(i+1)+" : "+(A[k]+B[k]));
 	   }
+	   sc.close();
   }
 }

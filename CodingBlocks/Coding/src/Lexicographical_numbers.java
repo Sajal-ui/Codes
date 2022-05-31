@@ -14,5 +14,6 @@ public class Lexicographical_numbers {
 	 while(!queue.isEmpty()) {
 		 System.out.print(queue.poll()+" ");
 	 }
+	 sc.close();
   }
 }

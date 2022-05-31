@@ -13,9 +13,10 @@ public class Tower_of_Hanoi {
      Steps(n-1,aux,from,to);
   }
   public static void main(String[] args) throws IOException{
-	Scanner sc=new Scanner(System.in);
-	int n=sc.nextInt();
-	Steps(n,"T1","T3","T2");
-	System.out.println(count);
+	  Scanner sc=new Scanner(System.in);
+	  int n=sc.nextInt();
+	  Steps(n,"T1","T3","T2");
+	  System.out.println(count);
+    sc.close();
   }
 }

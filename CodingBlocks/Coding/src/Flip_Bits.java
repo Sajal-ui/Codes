@@ -48,5 +48,6 @@ public class Flip_Bits {
 		A[i]=sc.nextInt();
 	}
 	System.out.println(FlipBits(A,N));
+	sc.close();
   }
 }

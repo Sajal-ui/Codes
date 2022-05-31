@@ -37,5 +37,6 @@ public class Maximize_Number_of_1 {
         }
         size=Math.max(size,(end-start));
         System.out.println(size);
+        sc.close();
     }
 }

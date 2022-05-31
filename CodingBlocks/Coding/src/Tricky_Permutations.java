@@ -40,5 +40,6 @@ public class Tricky_Permutations {
 	for(String h:l) {
 		System.out.println(h);
 	}
+	sc.close();
   }
 }

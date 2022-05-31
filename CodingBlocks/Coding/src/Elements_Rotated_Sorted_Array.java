@@ -35,5 +35,6 @@ public class Elements_Rotated_Sorted_Array {
         }
         int ele=sc.nextInt();
         System.out.println(Binary_Search(arr,0,n-1,ele));
+        sc.close();
     }
 }

@@ -51,5 +51,6 @@ public class Subset_sum_equals_k {
 		 }
 		 System.out.println();
 	 }
+	 sc.close();
    }
 }

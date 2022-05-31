@@ -61,5 +61,6 @@ public class Reverse_list_k {
 	  // f++;
 	   head=head.next;
 	 }
+	 sc.close();
   }
 }

@@ -29,5 +29,6 @@ public class Subsequence_Ascii_Recursion {
 	 }
 	 System.out.println();
 	 System.out.println(list.size());
+	 sc.close();
   }
 }

@@ -46,6 +46,7 @@ public class Merge_Sorted_List {
 			  System.out.print(tl+" ");
 		  }
 		  System.out.println();
+		  sc.close();
 	  }
    }
 }

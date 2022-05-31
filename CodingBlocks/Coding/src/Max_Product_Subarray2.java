@@ -37,5 +37,6 @@ public class Max_Product_Subarray2 {
         else{
             System.out.println(max_so_far);
         }
+        sc.close();
     }
 }

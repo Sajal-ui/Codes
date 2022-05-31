@@ -19,5 +19,6 @@ public class String_to_integer {
 	long t=(long)Math.pow(10, n-1);
 	long number=0;
 	String2Number(str,n,0,t,number);
+	sc.close();
   }
 }

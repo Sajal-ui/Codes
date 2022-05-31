@@ -75,5 +75,6 @@ public class Sudoku {
 		System.out.println();
 	  }
 	}
+	sc.close();
   }
 }

@@ -26,6 +26,7 @@ public class Subset_Summed_zero {
 	    else {
 		  System.out.println("No");
 	    }
+		sc.close();
 	  }
    }
 }

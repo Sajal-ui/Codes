@@ -53,5 +53,6 @@ public class Alternate_position_positive_negative {
             System.out.print(A[i]+" ");
         }
         System.out.println();
+        sc.close();
     }
 }

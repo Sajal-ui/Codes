@@ -40,5 +40,6 @@ public class kth_element_from_last {
 		 i++;
 	 }
 	 System.out.println(head.value);
+	 sc.close();
    }
 }

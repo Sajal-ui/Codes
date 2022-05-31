@@ -1,8 +1,5 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class N_Queen {
@@ -67,5 +64,6 @@ public class N_Queen {
 	 }
 	 System.out.println();
 	 System.out.println(list_f.size());
+	 sc.close();
   }
 }

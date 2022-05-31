@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
@@ -35,5 +35,6 @@ public class Longest_Consecutive_Subsequence{
         }
         max=Math.max(max,len);
         System.out.println(max);
+        sc.close();
     }
 }

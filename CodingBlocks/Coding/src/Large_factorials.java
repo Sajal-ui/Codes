@@ -26,5 +26,6 @@ public class Large_factorials {
            //System.out.println(list);
         }
         System.out.println(list);
+        sc.close();
     }
 }

@@ -18,5 +18,6 @@ public class X_2_End {
 	 }
 	 ans+=X;
 	 System.out.println(ans);
+	 sc.close();
   }
 }

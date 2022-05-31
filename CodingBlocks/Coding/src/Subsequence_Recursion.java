@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Subsequence_Recursion {
   public static void main(String[] args) throws IOException {
 	Scanner sc=new Scanner(System.in); 
-	int n=sc.nextInt();
+	//int n=sc.nextInt();
 	sc.nextLine();
 	String str=sc.nextLine();
 	int len=str.length();
@@ -37,5 +37,6 @@ public class Subsequence_Recursion {
 		System.out.println(t);
 	}
 	System.out.println(ans.size());
+	sc.close();
   }
 }
