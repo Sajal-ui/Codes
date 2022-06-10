@@ -23,5 +23,6 @@ public class Trapping_Rainwater {
             sum+=Math.min(left[i],right[i])-arr[i];
         }
         System.out.println(sum);
+        sc.close();
     }
 }

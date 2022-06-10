@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Subarray_with_k_distinct {
@@ -46,6 +45,7 @@ public class Subarray_with_k_distinct {
             }
         }
         //sum+=(n-start);
-        System.out.println(sum); 
+        System.out.println(sum);
+        sc.close(); 
     }
 }
