@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Counting_towers {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         long[][] dp = new long[1000001][2];
@@ -20,5 +20,6 @@ public class Main {
             System.out.println((dp[n][0] % mod + dp[n][1] % mod) % mod);
             t--;
         }
+        sc.close();
     }
 }
