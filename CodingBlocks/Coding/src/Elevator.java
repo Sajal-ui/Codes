@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Elevator {
     static int findNum(int[] table,int n,int num,int limit){
         for (int i = 0; i < n; i++) {
             if(table[i]+num<=limit){
