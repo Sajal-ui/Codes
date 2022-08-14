@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Main {
+public class Task_Deadlines {
     public static void main(String[] args) throws IOException{
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
         int n=Integer.parseInt(reader.readLine());

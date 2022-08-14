@@ -1,75 +1,55 @@
-
-#include <bits/stdc++.h>
-#define ll long long int
+#include <iostream>
+#include <algorithm>
+#include <queue>
 using namespace std;
- 
-struct job
-{
-    ll start,finish,money;
-};
- 
-bool comp(job j1,job j2)//comparator func used to sort according to the finish times.
-{
-    return (j1.finish < j2.finish);
-}
- 
-int find(job a[],ll ind)//Find the latest job that comes before the job no. i.
-{
-    ll l = 0,h = ind-1;
- 
-    while(l <= h)//Binary Search
-    {
-        ll mid = (l+h)/2;
-        if(a[mid].finish < a[ind].start)
-        {
-            if(a[mid+1].finish < a[ind].start)
-            l = mid + 1;
- 
-            else
-            return mid;
-        }
- 
-        else
-        h = mid - 1;
- 
-    }
-    return -1;
-}
- 
-int main()
-{
-    //Fast io.
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
- 
-    ll n;
-    cin>>n;
- 
-    struct job a[n];
-    for(ll i=0;i<n;i++) //taking input
-    cin>>a[i].start>>a[i].finish>>a[i].money;
- 
-    sort(a,a+n,comp);// sort based on finish time
- 
-    ll *dp = new ll[n];
-    dp[0] = a[0].money;
- 
-    for(ll i=1;i<n;i++)
-    {
-        ll temp = a[i].money; //temp = stores money of project i.
-        ll search = find(a,i); 
-        if(search != -1)
-        temp += dp[search];
- 
-        dp[i] = max(dp[i-1],temp); //store the max between the dp[i-1] and temp
-        //we have basically stored the max between 2 cases. i) if project i is included. ii) if project i is excluded.
-     
-    }
- 
-    cout<<dp[n-1]<<endl;
-    delete[] dp;
- 
-    return 0;
- 
+
+const int MAX_N = 2e5;
+
+int N;
+int ans[MAX_N];
+vector<pair<pair<int, int>, int>> v(MAX_N);
+
+int main() {
+	cin >> N;
+	v.resize(N);
+	for (int i = 0; i < N; i++) {
+		cin >> v[i].first.first >> v[i].first.second;
+		v[i].second = i; // store the original index
+	}
+	sort(v.begin(), v.end());
+
+	int rooms = 0, last_room = 0;
+	priority_queue<pair<int, int>> pq; // min heap to store departure times.
+	for (int i = 0; i < N; i++) {
+		if (pq.empty()) {
+			last_room++;
+			// make the departure time negative so that we create a min heap
+			// (cleanest way to do a min heap... default is max in c++)
+			pq.push(make_pair(-v[i].first.second, last_room));
+			ans[v[i].second] = last_room;
+		}
+		else {
+			// accessing the minimum departure time
+			pair<int, int> minimum = pq.top();
+			if (-minimum.first < v[i].first.first) {
+				pq.pop();
+				pq.push(make_pair(-v[i].first.second, minimum.second));
+				ans[v[i].second] = minimum.second;
+			}
+
+			else {
+				last_room++;
+				pq.push(make_pair(-v[i].first.second, last_room));
+				ans[v[i].second] = last_room;
+			}
+		}
+
+		rooms = max(rooms, int(pq.size()));
+	}
+
+
+	cout << rooms << "\n";
+	for (int i = 0; i < N; i++) {
+		cout << ans[i] << " ";
+	}
 }
